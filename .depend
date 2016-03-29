@@ -1,0 +1,14 @@
+expr.cmo :
+expr.cmx :
+lex.cmo : parse.cmi
+lex.cmx : parse.cmx
+main.cmo : parse.cmi lex.cmo expr.cmo
+main.cmx : parse.cmx lex.cmx expr.cmx
+parse.cmo : expr.cmo parse.cmi
+parse.cmx : expr.cmx parse.cmi
+parse.cmo : expr.cmo parse.cmi
+parse.cmx : expr.cmx parse.cmi
+lex.cmo : parse.cmi
+lex.cmx : parse.cmx
+parse.cmi : expr.cmo
+parse.cmi : expr.cmo
